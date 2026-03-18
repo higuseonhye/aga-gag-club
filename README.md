@@ -1,6 +1,6 @@
-# Dad Joke Club 😂
+# Aga Gag Club 😂
 
-All-in-one joke management tool. Create, evaluate, and build your Hall of Fame with your team.
+All-in-one joke management tool. Create, evaluate, and build your Hall of Fame with your team. (Aga = 아재, Korean for "dad joke")
 
 ## Features
 
@@ -9,7 +9,7 @@ All-in-one joke management tool. Create, evaluate, and build your Hall of Fame w
 - **🎬 Shorts** - Search & get YouTube shorts recommendations
 - **🎯 Analyze** - AI scores jokes and gives tips (video or text)
 - **🎪 Practice** - Simulate team reactions
-- **🏆 Hall of Fame** - Dad of the Month, Brave Dad, Dad Spirit Award
+- **🏆 Hall of Fame** - Aga of the Month, Brave Aga, Aga Spirit Award
 
 ## Getting Started
 

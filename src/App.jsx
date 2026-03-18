@@ -164,7 +164,7 @@ export default function App() {
         body: JSON.stringify({
           model,
           max_tokens: opts.maxTokens ?? 800,
-          system: system || "You are a dad joke expert. Create short, funny dad jokes.",
+          system: system || "You are an Aga gag expert. Create short, funny Aga gag.",
           messages: [{ role: "user", content: prompt }],
         }),
       });
@@ -193,7 +193,7 @@ export default function App() {
         ? `\n\n【Team favorites (reference this style)】\n${topByHearts.map((j) => `- "${j.text}"`).join("\n")}`
         : "";
     const systemPrompt = isDadJoke
-      ? `You are a dad joke expert. Create jokes that make logical sense with proper wordplay.
+      ? `You are an Aga gag expert. Create jokes that make logical sense with proper wordplay.
 
 【Rules】
 1. Question and answer must flow naturally. No forced connections.
@@ -217,7 +217,7 @@ Output ONLY a JSON array. No other text.`
 
 Output ONLY a JSON array. No other text.`;
     const userPrompt = isDadJoke
-      ? `Create 3 dad jokes using the keyword "${keyword}". Output JSON array only. Example: ["Q? A!", "Q? A!", "Q? A!"]`
+      ? `Create 3 Aga gag using the keyword "${keyword}". Output JSON array only. Example: ["Q? A!", "Q? A!", "Q? A!"]`
       : `Create 3 funny jokes using the keyword "${keyword}". Output JSON array only. Example: ["joke1", "joke2", "joke3"]`;
     try {
       const text = await callClaude(userPrompt, systemPrompt, {
@@ -462,7 +462,7 @@ Output JSON array only.`,
               WebkitTextFillColor: "transparent",
             }}
           >
-            Dad Joke Club
+            Aga Gag Club
           </h1>
           <p style={{ color: "#666", fontSize: 13, margin: "6px 0 0" }}>All-in-one joke management</p>
           <button
@@ -607,7 +607,7 @@ Output JSON array only.`,
                     fontWeight: jokeMode === "ajaegaeg" ? 700 : 400,
                   }}
                 >
-                  🧓 Dad Jokes
+                  🧓 Aga Gag
                 </button>
               </div>
               <Label>Generate by Keyword</Label>
@@ -838,7 +838,7 @@ Output JSON array only.`,
                 <Card>
                   <Label>Load from Dataset</Label>
                   <p style={{ fontSize: 12, color: "#666", margin: "0 0 12px" }}>
-                    AZ-GAG dad joke dataset. Read & react in shorts style
+                    AZ-GAG Aga gag dataset. Read & react in shorts style
                   </p>
                   <OrangeButton onClick={fetchFromWeb} disabled={loadingFetch} style={{ width: "100%" }}>
                     {loadingFetch ? "Loading..." : "🌐 Load Dataset"}
@@ -932,7 +932,7 @@ Output JSON array only.`,
               >
                 <span style={{ fontSize: 28 }}>😂</span>
                 <div>
-                  <div style={{ fontSize: 14, fontWeight: 700 }}>Dad Jokes Compilation</div>
+                  <div style={{ fontSize: 14, fontWeight: 700 }}>Aga Gag Compilation</div>
                   <div style={{ fontSize: 12, color: "#666" }}>Click to watch</div>
                 </div>
                 <span style={{ marginLeft: "auto", fontSize: 20 }}>▶</span>
@@ -948,7 +948,7 @@ Output JSON array only.`,
                   value={shortsSearch}
                   onChange={(e) => setShortsSearch(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && fetchShortsRecommendations()}
-                  placeholder="e.g. funny shorts, dad jokes..."
+                  placeholder="e.g. funny shorts, Aga gag..."
                   style={{ ...inputStyle, flex: 1 }}
                 />
                 <OrangeButton onClick={fetchShortsRecommendations} disabled={loadingShorts}>
@@ -1116,7 +1116,7 @@ Output JSON array only.`,
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       <span style={{ fontSize: 24 }}>👑</span>
                       <div>
-                        <div style={{ fontSize: 12, color: "#FFD700", fontWeight: 700 }}>Dad of the Month</div>
+                        <div style={{ fontSize: 12, color: "#FFD700", fontWeight: 700 }}>Aga of the Month</div>
                         <div style={{ fontSize: 13, fontWeight: 700 }}>{topJoke.author}</div>
                       </div>
                     </div>
@@ -1132,7 +1132,7 @@ Output JSON array only.`,
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       <span style={{ fontSize: 24 }}>🎖️</span>
                       <div>
-                        <div style={{ fontSize: 12, color: "#6496FF", fontWeight: 700 }}>Brave Dad of the Month</div>
+                        <div style={{ fontSize: 12, color: "#6496FF", fontWeight: 700 }}>Brave Aga of the Month</div>
                         <div style={{ fontSize: 13, fontWeight: 700 }}>{bottomJoke.author}</div>
                       </div>
                     </div>
@@ -1148,7 +1148,7 @@ Output JSON array only.`,
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       <span style={{ fontSize: 24 }}>🫡</span>
                       <div>
-                        <div style={{ fontSize: 12, color: "#64FF96", fontWeight: 700 }}>Dad Spirit Award</div>
+                        <div style={{ fontSize: 12, color: "#64FF96", fontWeight: 700 }}>Aga Spirit Award</div>
                         <div style={{ fontSize: 13, fontWeight: 700 }}>{mostActive.name}</div>
                       </div>
                     </div>
