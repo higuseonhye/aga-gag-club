@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const STORAGE_KEY = "dad-joke-club";
+const STORAGE_KEY = "aga-gag-club";
 const API_KEY_KEY = "dad-joke-api-key";
 const AZ_GAG_QUESTION = "https://raw.githubusercontent.com/AZ-GAG/AZ-GAG-dataset/main/question.csv";
 const AZ_GAG_ANSWER = "https://raw.githubusercontent.com/AZ-GAG/AZ-GAG-dataset/main/answer.csv";
